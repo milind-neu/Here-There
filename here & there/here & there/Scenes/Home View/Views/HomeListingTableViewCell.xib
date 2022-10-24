@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeListingTableViewCell" rowHeight="83" id="KGk-i7-Jjw" customClass="HomeListingTableViewCell" customModule="here___there" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSe-5A-YpV">
+                        <rect key="frame" x="8" y="8" width="384" height="41"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelIcon" translatesAutoresizingMaskIntoConstraints="NO" id="YHE-kH-y5M">
+                                <rect key="frame" x="8" y="8" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YHE-kH-y5M" secondAttribute="height" multiplier="1:1" id="ZYG-mi-m7B"/>
+                                    <constraint firstAttribute="height" constant="25" id="th6-Q0-ax8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0c-lp-FTc">
+                                <rect key="frame" x="49" y="0.0" width="327" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k0c-lp-FTc" firstAttribute="leading" secondItem="YHE-kH-y5M" secondAttribute="trailing" constant="16" id="5S1-PZ-7VX"/>
+                            <constraint firstAttribute="bottom" secondItem="k0c-lp-FTc" secondAttribute="bottom" id="66i-G0-bLi"/>
+                            <constraint firstAttribute="trailing" secondItem="k0c-lp-FTc" secondAttribute="trailing" constant="8" id="DCO-qM-vHp"/>
+                            <constraint firstItem="k0c-lp-FTc" firstAttribute="top" secondItem="CSe-5A-YpV" secondAttribute="top" id="MWd-R7-pcr"/>
+                            <constraint firstItem="YHE-kH-y5M" firstAttribute="leading" secondItem="CSe-5A-YpV" secondAttribute="leading" constant="8" id="UXX-Kg-pvm"/>
+                            <constraint firstAttribute="bottom" secondItem="YHE-kH-y5M" secondAttribute="bottom" constant="8" id="ghb-YR-eFP"/>
+                            <constraint firstItem="YHE-kH-y5M" firstAttribute="centerY" secondItem="CSe-5A-YpV" secondAttribute="centerY" id="gt8-gn-fLT"/>
+                            <constraint firstItem="YHE-kH-y5M" firstAttribute="top" secondItem="CSe-5A-YpV" secondAttribute="top" constant="8" id="vGu-ji-n1g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CSe-5A-YpV" secondAttribute="trailing" constant="8" id="2ma-s4-eIK"/>
+                    <constraint firstAttribute="bottom" secondItem="CSe-5A-YpV" secondAttribute="bottom" constant="8" id="cxo-rZ-4yr"/>
+                    <constraint firstItem="CSe-5A-YpV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="u7s-9O-9xa"/>
+                    <constraint firstItem="CSe-5A-YpV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="zgc-SE-ggQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgIcon" destination="YHE-kH-y5M" id="eb3-7o-y5i"/>
+                <outlet property="lblName" destination="k0c-lp-FTc" id="osu-3B-RDK"/>
+            </connections>
+            <point key="canvasLocation" x="195.6521739130435" y="110.82589285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelIcon" width="137" height="137"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
